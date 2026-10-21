@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SysAdmin Nexus is a System Administrator career portfolio featuring certifications, essential IT skills, and professional learning resources.">
+  <meta name="theme-color" content="#101426">
+  <title>SysAdmin Nexus | System Administrator Career Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a class="logo" href="#home" aria-label="SysAdmin Nexus home">
+      <span class="logo-icon">N<span>_</span></span>
+      <span>
+        SysAdmin <b>Nexus</b>
+        <small>CAREER PORTFOLIO</small>
+      </span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Toggle navigation"
+      aria-controls="navLinks"
+      aria-expanded="false"
+      type="button"
+    >☰</button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#certifications">Certifications</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#resources">Resources</a>
+      <a class="nav-link" href="#about">About Me</a>
+    </nav>
+
+    <a class="nav-button" href="#certifications">Explore paths ↗</a>
+  </header>
+
+  <main>
+
+    <!-- HOME / HERO -->
+    <section class="hero section-card" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">
+          <span class="live-dot"></span>
+          YOUR IT JOURNEY STARTS HERE
+        </p>
+
+        <h1>
+          Keep systems running.<br>
+          <span>Keep growing.</span>
+        </h1>
+
+        <p class="hero-description">
+          Explore the certifications, technical skills, and professional
+          learning opportunities that can help you prepare for a career
+          in System Administration. Start with the fundamentals and
+          build your knowledge through practical experience.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button primary-button" href="#certifications">
+            Explore certifications <span>→</span>
+          </a>
+          <a class="button secondary-button" href="#resources">
+            Start learning ↗
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>04</strong>
+            <span>Certification paths</span>
+          </div>
+          <div>
+            <strong>06</strong>
+            <span>Professional skills</span>
+          </div>
+          <div>
+            <strong>04</strong>
+            <span>Learning resources</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DECORATIVE SYSTEM DASHBOARD -->
+      <div class="hero-art" aria-label="Illustration of a system administration dashboard">
+        <div class="decor-ring ring-one"></div>
+        <div class="decor-ring ring-two"></div>
+
+        <div class="monitor">
+          <div class="monitor-top">
+            <div class="window-dots">
+              <i></i><i></i><i></i>
+            </div>
+            <span>admin-console / overview</span>
+            <span class="lock">⌑</span>
+          </div>
+
+          <div class="monitor-body">
+            <div class="monitor-title">
+              <div>
+                <small>INFRASTRUCTURE</small>
+                <h3>System overview</h3>
+              </div>
+              <span class="online-label">● DEMO</span>
+            </div>
+
+            <div class="status-row">
+              <span class="status-icon">▤</span>
+              <div>
+                <b>Server administration</b>
+                <small>Services and configuration</small>
+              </div>
+              <span class="check">✓</span>
+            </div>
+
+            <div class="status-row">
+              <span class="status-icon">⌘</span>
+              <div>
+                <b>Network management</b>
+                <small>Connectivity and addressing</small>
+              </div>
+              <span class="check">✓</span>
+            </div>
+
+            <div class="status-row">
+              <span class="status-icon">⬡</span>
+              <div>
+                <b>Security practices</b>
+                <small>Access control and updates</small>
+              </div>
+              <span class="check">✓</span>
+            </div>
+
+            <div class="terminal">
+              <p><span>$</span> whoami</p>
+              <p class="terminal-result">system_administrator</p>
+              <p><span>$</span> echo "Learning in progress"</p>
+              <p class="terminal-result">Learning in progress ✓</p>
+              <p><span>$</span> <i class="cursor"></i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-note note-top">
+          <span>✦</span> Learn something new
+        </div>
+        <div class="floating-note note-bottom">
+          <span>✓</span> Practice builds confidence
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <span>01 / CAREER DASHBOARD</span>
+        <span>LEARN • PRACTICE • CERTIFY</span>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="content-section" id="certifications">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">BUILD YOUR QUALIFICATIONS</p>
+          <h2>Certification <span>directory</span></h2>
+        </div>
+
+        <p class="section-description">
+          Explore certification pathways in technical support,
+          networking, Linux system administration, and cybersecurity.
+          Compare their focus areas and visit official provider websites.
+        </p>
+      </div>
+
+      <!-- SEARCH AND FILTERS -->
+      <div class="toolbar">
+        <div class="filter-list" aria-label="Filter certifications">
+          <button class="filter-button active" data-filter="all" type="button">
+            All
+          </button>
+          <button class="filter-button" data-filter="foundation" type="button">
+            Foundation
+          </button>
+          <button class="filter-button" data-filter="network" type="button">
+            Network
+          </button>
+          <button class="filter-button" data-filter="linux" type="button">
+            Linux
+          </button>
+          <button class="filter-button" data-filter="security" type="button">
+            Security
+          </button>
+        </div>
+
+        <label class="search">
+          <span>⌕</span>
+          <input
+            id="certSearch"
+            type="search"
+            placeholder="Search certifications..."
+            aria-label="Search certifications"
+          >
+        </label>
+      </div>
+
+      <div class="cert-grid">
+
+        <!-- COMPTIA A+ -->
+        <article
+          class="cert-card"
+          data-category="foundation"
+          data-search="comptia a+ hardware operating systems troubleshooting technical support"
+        >
+          <div class="cert-card-top">
+            <span class="cert-logo logo-blue">A+</span>
+            <span class="level">FOUNDATION</span>
+          </div>
+
+          <h3>CompTIA A+</h3>
+          <p class="issuer">Issuing organization: CompTIA</p>
+
+          <p>
+            A foundational IT certification covering technical support,
+            hardware, operating systems, troubleshooting, and basic
+            security practices.
+          </p>
+
+          <div class="tags">
+            <span>Hardware</span>
+            <span>OS support</span>
+            <span>Troubleshooting</span>
+          </div>
+
+          <a
+            class="official-link"
+            href="https://www.comptia.org/certifications/a"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Official certification <span>↗</span>
+          </a>
+        </article>
+
+        <!-- COMPTIA NETWORK+ -->
+        <article
+          class="cert-card"
+          data-category="network"
+          data-search="comptia network+ networking tcp ip dns dhcp connectivity infrastructure"
+        >
+          <div class="cert-card-top">
+            <span class="cert-logo logo-cyan">N+</span>
+            <span class="level">NETWORKING</span>
+          </div>
+
+          <h3>CompTIA Network+</h3>
+          <p class="issuer">Issuing organization: CompTIA</p>
+
+          <p>
+            Focuses on networking concepts, network infrastructure,
+            connectivity, troubleshooting, and network security
+            fundamentals.
+          </p>
+
+          <div class="tags">
+            <span>TCP/IP</span>
+            <span>DNS / DHCP</span>
+            <span>Networks</span>
+          </div>
+
+          <a
+            class="official-link"
+            href="https://www.comptia.org/certifications/network"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Official certification <span>↗</span>
+          </a>
+        </article>
+
+        <!-- RED HAT RHCSA -->
+        <article
+          class="cert-card"
+          data-category="linux"
+          data-search="red hat certified system administrator rhcsa linux command line storage services users"
+        >
+          <div class="cert-card-top">
+            <span class="cert-logo logo-orange">RH</span>
+            <span class="level">LINUX ADMIN</span>
+          </div>
+
+          <h3>Red Hat Certified System Administrator</h3>
+          <p class="issuer">Issuing organization: Red Hat</p>
+
+          <p>
+            Demonstrates practical administration skills for Red Hat
+            Enterprise Linux, including command-line work, users,
+            storage, and system services.
+          </p>
+
+          <div class="tags">
+            <span>Linux CLI</span>
+            <span>Storage</span>
+            <span>Services</span>
+          </div>
+
+          <a
+            class="official-link"
+            href="https://www.redhat.com/en/services/certification/rhcsa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Official certification <span>↗</span>
+          </a>
+        </article>
+
+        <!-- COMPTIA SECURITY+ -->
+        <article
+          class="cert-card"
+          data-category="security"
+          data-search="comptia security+ cybersecurity threats risk access control protection"
+        >
+          <div class="cert-card-top">
+            <span class="cert-logo logo-pink">S+</span>
+            <span class="level">CYBERSECURITY</span>
+          </div>
+
+          <h3>CompTIA Security+</h3>
+          <p class="issuer">Issuing organization: CompTIA</p>
+
+          <p>
+            Covers cybersecurity principles, threats, risk management,
+            identity and access controls, and methods for protecting
+            IT systems.
+          </p>
+
+          <div class="tags">
+            <span>Threats</span>
+            <span>Risk</span>
+            <span>Access control</span>
+          </div>
+
+          <a
+            class="official-link"
+            href="https://www.comptia.org/certifications/security"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Official certification <span>↗</span>
+          </a>
+        </article>
+
+      </div>
+
+      <p class="no-results" id="noResults" hidden>
+        No matching certifications found. Try a different search or filter.
+      </p>
+
+      <p class="small-note">
+        Certification requirements, exam versions, and prices may change.
+        Visit each official provider website for current information.
+      </p>
+    </section>
+
+    <!-- SKILLS AND LEARNING RESOURCES -->
+    <section class="two-column">
+
+      <!-- SKILLS -->
+      <article class="section-card skills-panel" id="skills">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">YOUR TECHNICAL TOOLKIT</p>
+            <h2>Essential skills</h2>
+          </div>
+          <span class="heading-symbol">⌘</span>
+        </div>
+
+        <p class="muted">
+          System Administrators need to maintain reliable infrastructure,
+          manage access, investigate problems, and keep systems organized.
+          These skills are useful areas for aspiring professionals to develop.
+        </p>
+
+        <div class="skill-item">
+          <span class="skill-number">01</span>
+          <div class="skill-copy">
+            <b>Directory Services & Domain Administration</b>
+            <small>
+              Manage centralized user accounts, groups, authentication,
+              and access policies across an organization.
+            </small>
+            <a
+              class="skill-source"
+              href="https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Source: Microsoft Learn ↗</a>
+          </div>
+          <span class="skill-label">IDENTITY</span>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-number">02</span>
+          <div class="skill-copy">
+            <b>Cloud Infrastructure Management</b>
+            <small>
+              Understand cloud resources, virtual servers, storage,
+              and permissions used to support modern IT environments.
+            </small>
+            <a
+              class="skill-source"
+              href="https://learn.microsoft.com/en-us/training/azure/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Source: Microsoft Learn ↗</a>
+          </div>
+          <span class="skill-label">CLOUD</span>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-number">03</span>
+          <div class="skill-copy">
+            <b>Log Analysis & System Auditing</b>
+            <small>
+              Review event records and system logs to investigate
+              errors, identify unusual activity, and support troubleshooting.
+            </small>
+            <a
+              class="skill-source"
+              href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Source: Microsoft Learn ↗</a>
+          </div>
+          <span class="skill-label">ANALYSIS</span>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-number">04</span>
+          <div class="skill-copy">
+            <b>Backup & Disaster Recovery</b>
+            <small>
+              Maintain backups, test data restoration, and prepare
+              recovery procedures to help minimize service interruptions.
+            </small>
+            <a
+              class="skill-source"
+              href="https://www.cisa.gov/resources-tools/resources/data-backup-options"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Source: CISA ↗</a>
+          </div>
+          <span class="skill-label">RECOVERY</span>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-number">05</span>
+          <div class="skill-copy">
+            <b>Configuration Management</b>
+            <small>
+              Keep system settings consistent, document changes,
+              and automate repeatable administrative tasks.
+            </small>
+            <a
+              class="skill-source"
+              href="https://docs.ansible.com/ansible/latest/getting_started/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Source: Ansible Documentation ↗</a>
+          </div>
+          <span class="skill-label">AUTOMATION</span>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-number">06</span>
+          <div class="skill-copy">
+            <b>Service Availability & Monitoring</b>
+            <small>
+              Monitor system metrics, check service availability,
+              and investigate performance problems.
+            </small>
+            <a
+              class="skill-source"
+              href="https://prometheus.io/docs/introduction/overview/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Source: Prometheus Documentation ↗</a>
+          </div>
+          <span class="skill-label">MONITORING</span>
+        </div>
+      </article>
+
+      <!-- LEARNING RESOURCES -->
+      <article class="section-card resources-panel" id="resources">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">EXPLORE NEW IT TOOLS</p>
+            <h2>Professional learning hub</h2>
+          </div>
+          <span class="heading-symbol">↗</span>
+        </div>
+
+        <p class="muted">
+          Explore practical guides for cloud administration, Linux systems,
+          infrastructure automation, and performance monitoring.
+        </p>
+
+        <a
+          class="resource-item"
+          href="https://learn.microsoft.com/en-us/training/azure/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="resource-icon ms-icon">AZ</span>
+          <span class="resource-copy">
+            <b>Microsoft Learn: Azure Training</b>
+            <small>
+              Study cloud infrastructure, Azure services, resource
+              management, and cloud administration through guided learning.
+            </small>
+            <em>CLOUD ADMINISTRATION</em>
+          </span>
+          <span class="resource-arrow">↗</span>
+        </a>
+
+        <a
+          class="resource-item"
+          href="https://ubuntu.com/server/docs"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="resource-icon linux-icon">U</span>
+          <span class="resource-copy">
+            <b>Ubuntu Server Documentation</b>
+            <small>
+              Learn about Linux server configuration, networking,
+              storage, security, and server maintenance.
+            </small>
+            <em>LINUX SYSTEMS</em>
+          </span>
+          <span class="resource-arrow">↗</span>
+        </a>
+
+        <a
+          class="resource-item"
+          href="https://docs.ansible.com/ansible/latest/getting_started/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="resource-icon cisco-icon">AN</span>
+          <span class="resource-copy">
+            <b>Ansible Getting Started</b>
+            <small>
+              Explore inventories, managed systems, playbooks,
+              and repeatable IT administration tasks.
+            </small>
+            <em>IT AUTOMATION</em>
+          </span>
+          <span class="resource-arrow">↗</span>
+        </a>
+
+        <a
+          class="resource-item"
+          href="https://prometheus.io/docs/introduction/first_steps/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="resource-icon redhat-icon">PM</span>
+          <span class="resource-copy">
+            <b>Prometheus Monitoring Guide</b>
+            <small>
+              Learn the basics of collecting system metrics and
+              monitoring resources to help identify performance problems.
+            </small>
+            <em>SYSTEM MONITORING</em>
+          </span>
+          <span class="resource-arrow">↗</span>
+        </a>
+
+        <div class="resource-tip">
+          <span>✦</span>
+          <p>
+            <b>Hands-on learning challenge</b><br>
+            Create a Linux virtual machine, practise basic administration,
+            automate a repeatable task, and document your results in a
+            short technical report.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ABOUT THE DEVELOPER -->
+    <section class="section-card about-section" id="about">
+
+      <div class="developer-avatar">
+        <span>SN</span>
+        <small>THE DEVELOPER</small>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>
+          Learning today.<br>
+          <span>Building tomorrow.</span>
+        </h2>
+
+        <p>
+          Hello! I'm <strong>Joshua Mae Blaza</strong>, a student taking
+          <strong>BSIT</strong>. I created SysAdmin Nexus
+          as an educational portfolio to help aspiring System Administrators
+          explore certification pathways, understand technical skills,
+          and discover useful learning materials.
+        </p>
+
+        <p>
+          Through this project, I aim to improve my web development skills
+          while learning more about operating systems, cloud infrastructure,
+          networking, system monitoring, and IT security. My long-term goal
+          is to gain practical experience and prepare for a career in the
+          information technology field.
+        </p>
+
+        <div class="about-tags">
+          <span>Curious learner</span>
+          <span>Problem solver</span>
+          <span>Future IT professional</span>
+        </div>
+      </div>
+
+      <aside class="goal-card">
+        <span class="goal-icon">✳</span>
+        <small>MY CAREER CHECKLIST</small>
+
+        <h3>
+          Learn.<br>
+          Practise.<br>
+          Improve.
+        </h3>
+
+        <p>
+          Set learning goals, build small projects, and document
+          new technical skills as you progress.
+        </p>
+
+        <a href="#resources">Find learning resources →</a>
+      </aside>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a class="logo footer-logo" href="#home">
+      <span class="logo-icon">N<span>_</span></span>
+      <span>
+        SysAdmin <b>Nexus</b>
+        <small>CAREER PORTFOLIO</small>
+      </span>
+    </a>
+
+    <p>
+      An educational portfolio for System Administration career development.
+    </p>
+
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+
+</body>
+</html>
